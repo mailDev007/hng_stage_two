@@ -31,8 +31,7 @@ const SingleMovie = () => {
                 } catch(e){
                     console.log(e);
                 }
-                // setGenre(res.genres);
-                // console.log(res);
+                
             })
     console.log(parsedId, router.query);
 
@@ -46,8 +45,7 @@ const SingleMovie = () => {
                 } catch(e){
                     console.log(e);
                 }
-                // setGenre(res.genres);
-                // console.log(res);
+                
             })
             console.log(parsedId, router.query);
 
