@@ -6,7 +6,7 @@ import Logo from "../../public/darkLogo.svg";
 import Poster from "../../public/Poster.png";
 import buttonOne from "../../public/btn1.svg";
 import buttonTwo from "../../public/btn2.svg";
-
+import Image from 'next/image';
 
 const SingleMovie = () => {
 
@@ -63,12 +63,12 @@ const SingleMovie = () => {
 
                 <div className={styles.sidebarWrapper} onClick={redirectUser}>
                     <div className={styles.logoArea}>
-                        <img src={Logo.src} alt="" />
+                        <Image src={Logo.src} alt="" />
                     </div>
                 </div>
                 <div className={styles.contentWrapper}>
                     <div className={styles.imageContainer}>
-                        <img src={"https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces"+featuredMovie.poster_path} alt="" className={styles.movieImage} />
+                        <Image src={"https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces"+featuredMovie.poster_path} alt="" className={styles.movieImage} />
                     </div>
                     <div className={styles.titleGenresRating}>
                         <div>
@@ -98,8 +98,8 @@ const SingleMovie = () => {
                             </div>
                         </div>
                         <div className="actionsOtherMovies">
-                            <img src={buttonOne.src} alt="" width="80%" /><br/>
-                            <img src={buttonTwo.src} alt="" width="80%" />
+                            <Image src={buttonOne.src} alt="" width="80%" /><br/>
+                            <Image src={buttonTwo.src} alt="" width="80%" />
                         </div>
                     </div>
                 </div>
