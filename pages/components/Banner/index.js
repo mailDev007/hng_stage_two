@@ -30,45 +30,6 @@ const Banner = () => {
     const [Search, setResults] = useState([]);
     const router = useRouter();
 
-    const searchParam = (query) => `https://www.omdbapi.com/?s=${query}&apikey=3f57fd83`;
-
-    const getQueryParam = useCallback((event) => {
-        const query = event.target.value;
-        showResults(query);
-    })
-
-    const onChange = useCallback((event) => {
-        const query = document.querySelector('input').value;
-        // console.log(query)
-
-        if(query.length > 0){
-            fetch(searchParam(query))
-            .then(res => res.json())
-            .then(res => {
-
-                if(res.results.length > 0){
-                    setResults(res.results);
-                    console.log(res, res.Response, Search);
-                }else{
-                    setResults([])
-                }
-                
-            })
-        }
-    }, []);
-
-    const onFocus = useCallback(() => {
-        triggerListener(true)
-        window.addEventListener('button', onClick);
-    }, []);
-
-    const onClick = useCallback(() => {
-        if(movieSearched.current && !movieSearched.current.contains(event.target)){
-            triggerListener(false);
-            window.removeEventListener('button', onClick);
-        }
-    }, []);
-
     return (
         <div className={styles.bannerSection}>
             <div className={styles.navbar}>    
@@ -80,9 +41,9 @@ const Banner = () => {
                     </div>
                 </a>
                 <div className={styles.searchBox}>
-                    <input type="text" className={styles.searchInput} value={query} onChange={getQueryParam} onFocus={onFocus} placeholder="What do you want to watch?"/>
+                    <input type="text" className={styles.searchInput} placeholder="What do you want to watch?"/>
                     <button>
-                        <Image src={SearchIcon.src} className={styles.searchIcon} onClick={onChange}/>
+                        <Image src={SearchIcon.src} className={styles.searchIcon}/>
                     </button>
                 </div>
                 <h3 className={styles.actionBtn}>
