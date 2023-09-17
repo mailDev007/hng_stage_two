@@ -1,0 +1,84 @@
+.mainWrapper{
+    width: 100%;
+    display: flex;
+    column-gap: 30px;
+    padding: 0.2px;
+    color: #393939;
+}
+
+.sidebarWrapper{
+    width: 38%;
+    height: 130vh;
+    margin-right: 20px;
+    border: 1.8px solid #b4b4b4;
+    border-radius: 0 50px 50px 0;
+    text-align: center;
+    padding: 50px 0;
+    cursor: pointer;
+}
+
+.logoArea{
+    margin-bottom: 30px;
+}
+
+.contentWrapper{
+    padding: 50px 50px 0 0;
+}
+
+.imageContainer{
+    margin-bottom: 10px;
+}
+
+.movieImage{
+    height: 380px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.titleGenresRating{
+    padding: 20px 20px;
+}
+
+.titleGenresRating div{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.titleGenresRating div h3{
+    column-gap: 20px;
+    font-weight: 500;
+    display: flex;
+    margin: 0;
+}
+
+.otherDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: -10px;
+}
+
+.singleMovieDetail{
+    width: 80%;
+    text-align: justify;
+    margin-top: 15px;
+    margin-right: 40px;
+}
+
+.singleMovieDetail p{
+    margin-bottom: 35px;
+}
+
+.movieCasts{
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+}
+
+.movieCasts span{
+    color: rgba(155, 0, 0, 0.859);
+    display: inline-block;
+    margin-left: 10px;
+}

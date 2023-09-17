@@ -1,0 +1,42 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body{
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.horizontal-alignment{
+  margin-left: 77px;
+  margin-right: 77px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.default-button{
+  padding: 10px 25px;
+  display: block;
+  margin: 40px 77px;
+  background: rgba(0, 128, 0, 0.727);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}

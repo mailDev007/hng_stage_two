@@ -1,0 +1,36 @@
+.footer{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.footer .wrapper{
+    width: 45%;
+    margin: 0 auto 20px;
+}
+
+.socials{
+    width: 55%;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.socials img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.usefulLinks{
+    width: 75%;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+}
+
+.copywrite{
+    text-align: center;
+    color: #787878;
+    font-weight: 500;
+    padding-bottom: 20px;
+}

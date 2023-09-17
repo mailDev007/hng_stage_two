@@ -1,0 +1,91 @@
+.bannerSection{
+    color: white;
+    padding: 20px 5% 30px;
+    height: 600px;
+    position: relative;
+    width: 100%;
+    background-image: url(../../../public/Poster.png);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoImage{
+    margin-right: 20px;
+}
+
+.logoText{
+    position: relative;
+    top: -15px;
+}
+
+.searchBox{
+    width: 45%;
+    padding-top: 10px;
+    position: relative;
+}
+
+.searchInput{
+    width: 100%;
+    background: unset;
+    border: 1.5px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    padding: 7px 10px;
+    outline: unset;
+    color: rgb(209, 209, 209);
+}
+
+.searchInput::placeholder{
+    color: rgb(209, 209, 209);
+}
+
+.searchIcon{
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    z-index: 800;
+    cursor: pointer;
+}
+
+.bannerText{
+    position: absolute;
+    top: 50%;
+    transform: translate(77px, -50%);
+    width: 35%;
+    font-size: 72px;
+    color: white;
+}
+
+.actionBtn{
+    margin-top: 10px;
+}
+
+.actionBtn span{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    top: -15px;
+    left: 0;
+    cursor: pointer;
+}
+
+.actionBtn img{
+    cursor: pointer;
+}
+
+.bannerAdContainer{
+    padding-top: 70px;
+    color: white;
+    display: flex;
+    column-gap: 40px;
+
+}
+
+
+@media screen and (max-width:500px) {
+    .bannerText{
+        font-size: 3rem;
+    }
+}
