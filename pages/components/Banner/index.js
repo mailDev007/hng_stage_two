@@ -1,4 +1,4 @@
-import React, { Fragment, useCallback, useRef, useState } from "react";
+import React, { useState } from "react";
 import { NOWPLAYING, Setting } from "../../api/api";
 import styles from './banner.module.css';
 import Logo from "../../../public/tv.png";
@@ -6,12 +6,11 @@ import Poster from "../../../public/Poster.svg";
 import SiteName from "../../../public/MovieBox.png";
 import SearchIcon from "../../../public/Icon.svg";
 import MenuIcon from "../../../public/Menu.svg";
-import { useRouter } from "next/router";
 import Image from "next/image";
 
 const Banner = () => {
 
-    const myMovie = [];
+    // const myMovie = [];
     const [featuredMovie, featureMovie] = useState([]);
 
     useEffect((event) => {
@@ -24,16 +23,9 @@ const Banner = () => {
         
     }, []);
 
-    const movieSearched = useRef(null);
-    const [query, showResults] = useState([]);
-    const [active, triggerListener] = useState(false);
-    const [Search, setResults] = useState([]);
-    const router = useRouter();
-
     return (
         <div className={styles.bannerSection}>
             <div className={styles.navbar}>    
-                {/* <Image src="/bg.png" /> */}
                 <a href="/" className={styles.siteLogo}>
                     <div>
                         <Image src={Logo.src} alt="alt" className={styles.logoImage}/>
